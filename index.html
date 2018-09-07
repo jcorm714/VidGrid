@@ -3,11 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>VidGrid online</title>
+  <!--  <link rel = "sytlesheet" type = "text/css" href = "styles.css"> -->
+  <style>
+    #c1 {
+      border: 1px solid black;
+      margin:auto;
+      z-index: 1;
+
+    }
+    #video{
+      border: 1px solid black;
+      display: none;
+    }
+    button{
+      z-index: 4;
+    }
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
+
   <body>
-    <canvas id = "c1" width="560" height="315">
-      <video id = "video" src = "https://www.youtube.com/watch?v=Y4FFOZKcE5M&t=130s&index=14&list=PLYvbqe7pJsoN-E-tKWvWbqQ_JSyV5FkBB" width="560" height="315" autoplay = "true"></video>
+    <canvas id = "c1" width="1066" height="600" >
+      the browser does not support canvas
     </canvas>
 
+    <video controls id = "video"  src = "ducks.mp4" width="1280" height="720" autoplay = "true" type = "video/mp4">
+
+      the browser does not support video
+    </video>
+    <br>
+    <button>Play</button>
   </body>
+  <script src = "script.js" type = "text/javascript"></script>
 </html>
