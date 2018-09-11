@@ -11,7 +11,7 @@ $(function() {
     (function loop() {
       if (!$this.paused && !$this.ended) {
 
-        ctx.drawImage($this, 0, 0);
+        //ctx.drawImage($this);
         for(let i = 0; i < 4; i++)
         {
           drawLineVert("rgba(255,255,255,1)", canvas.width - canvas.width/4 * i);
